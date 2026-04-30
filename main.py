@@ -14,6 +14,8 @@ def get_average_score(scores):
     Calculates the average of a list of scores.
     Bug: Does not handle empty lists, will throw ZeroDivisionError.
     """
+    if len(scores) == 0:
+        return 0
     return sum(scores) / len(scores)
 
 def format_username(first_name, last_name):
