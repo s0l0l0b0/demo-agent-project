@@ -21,7 +21,9 @@ def format_username(first_name, last_name):
     Formats a full name.
     Bug: If last_name is empty string, it leaves a trailing space.
     """
-    return f"{first_name} {last_name}"
+    if last_name:
+        return f"{first_name} {last_name}"
+    return first_name
 
 def main():
     print("Hello from demo-agent-project!")
